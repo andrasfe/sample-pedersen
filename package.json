@@ -1,0 +1,41 @@
+{
+  "name": "solGrined",
+  "version": "0.0.1",
+  "description": "Implementation of Pederson Commitment in Solidity",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test --network local ",
+    "deployLocal": "truffle migrate --network local",
+    "deployDev": "truffle migrate --network devnet",
+    "deployTest": "truffle migrate --network testnet",
+    "deployLive": "truffle migrate --network mainnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18dew/solGrined.git"
+  },
+  "author": "Harsh Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/18dew/solGrined/issues"
+  },
+  "homepage": "https://github.com/18dew/solGrined#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.23",
+    "axios": "^0.24.0",
+    "bn": "^1.0.5",
+    "dotenv": "^8.2.0",
+    "pedersen-commitments": "github:christsim/pedersen-commitments",
+    "truffle": "5.0.40",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "solidity-docgen": "0.3.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
